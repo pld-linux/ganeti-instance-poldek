@@ -1,7 +1,7 @@
 Summary:	PLD Linux guest OS definition for Ganeti
 Name:		ganeti-instance-poldek
 Version:	0.1
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Applications/System
 Source0:	https://github.com/janekr/%{name}/archive/v%{version}.tar.gz?/%{name}-%{version}.tar.gz
@@ -20,7 +20,6 @@ Requires:	sed
 Requires:	tar
 Requires:	util-linux
 Requires:	xfsprogs
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
