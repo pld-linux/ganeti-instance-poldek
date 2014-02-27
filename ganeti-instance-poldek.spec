@@ -1,11 +1,11 @@
 Summary:	PLD Linux guest OS definition for Ganeti
 Name:		ganeti-instance-poldek
-Version:	0.1
-Release:	3
+Version:	0.2
+Release:	1
 License:	GPL v2
 Group:		Applications/System
-Source0:	https://github.com/janekr/%{name}/archive/v%{version}.tar.gz?/%{name}-%{version}.tar.gz
-# Source0-md5:	ee3b30d4d24a84df462d60c8ffb1c33f
+Source0:	https://bitbucket.org/baggins/%{name}/get/v%{version}.tar.bz2?/%{name}-%{version}.tar.bz2
+# Source0-md5:	fcbf656d0112f24ffe65ced462a3719a
 BuildRequires:	rpmbuild(macros) >= 1.647
 Requires:	blockdev
 Requires:	coreutils
@@ -27,7 +27,7 @@ This is a guest OS definition for Ganeti.  It will install a minimal
 version of PLD via poldek (thus it requires network access).
 
 %prep
-%setup -q
+%setup -q -n baggins-ganeti-instance-poldek-ff0d77e416f9
 
 %build
 %{__aclocal}
